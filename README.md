@@ -9,6 +9,9 @@
 [![Windows (MSYS2)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-msys2.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-msys2.yml)
 [![Windows (MinGW)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-mingw.yml)
 [![Windows (Visual Studio)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-vs.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-vs.yml)
+<br/>
+[![Doxygen](https://github.com/rcallan/CppTrader/actions/workflows/doxygen.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/doxygen.yml)
+
 
 C++ Trader is a set of components for building high performance Trading Platform:
 * Ultra fast matching engine

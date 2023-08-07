@@ -9,10 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
+        with:
+          lfs: 'true'
 
       - name: "Setup required packages"
-        run: sudo apt-get install -y binutils-dev libssl-dev uuid-dev
+        run: sudo apt-get update && sudo apt-get install -y binutils-dev libssl-dev uuid-dev
 
       - name: "Setup clang"
         uses: egor-tensin/setup-clang@v1

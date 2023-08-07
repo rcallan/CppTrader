@@ -9,7 +9,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
+        with:
+          lfs: 'true'
 
       - name: "Setup Visual Studio"
         uses: egor-tensin/vs-shell@v2
