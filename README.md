@@ -1,16 +1,16 @@
 # CppTrader
 
-[![Linux (clang)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-clang.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-linux-clang.yml)
-[![Linux (gcc)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-gcc.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-linux-gcc.yml)
+[![Linux (clang)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-clang.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-clang.yml)
+[![Linux (gcc)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-gcc.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-linux-gcc.yml)
 <br/>
-[![MacOS](https://github.com/rcallan/CppTrader/actions/workflows/build-macos.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-macos.yml)
+[![MacOS](https://github.com/rcallan/CppTrader/actions/workflows/build-macos.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-macos.yml)
 <br/>
-[![Windows (Cygwin)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-cygwin.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-cygwin.yml)
-[![Windows (MSYS2)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-msys2.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-msys2.yml)
-[![Windows (MinGW)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-mingw.yml)
-[![Windows (Visual Studio)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-vs.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/build-windows-vs.yml)
+[![Windows (Cygwin)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-cygwin.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-cygwin.yml)
+[![Windows (MSYS2)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-msys2.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-msys2.yml)
+[![Windows (MinGW)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-mingw.yml)
+[![Windows (Visual Studio)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-vs.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/build-windows-vs.yml)
 <br/>
-[![Doxygen](https://github.com/rcallan/CppTrader/actions/workflows/doxygen.yml/badge.svg)](https://github.com/chronoxor/CppTrader/actions/workflows/doxygen.yml)
+[![Doxygen](https://github.com/rcallan/CppTrader/actions/workflows/doxygen.yml/badge.svg)](https://github.com/rcallan/CppTrader/actions/workflows/doxygen.yml)
 
 
 C++ Trader is a set of components for building high performance Trading Platform:
@@ -36,25 +36,11 @@ C++ Trader is a set of components for building high performance Trading Platform
 * Examples
 * Tests
 * [Doxygen](http://www.doxygen.org) API documentation
-* Continuous integration ([Travis CI](https://travis-ci.com), [AppVeyor](https://www.appveyor.com))
+* Continuous integration (github actions)
 
 # Requirements
-* Linux
-* MacOS
-* Windows
-* [cmake](https://www.cmake.org)
-* [gcc](https://gcc.gnu.org)
-* [git](https://git-scm.com)
 * [gil](https://github.com/chronoxor/gil.git)
 * [python3](https://www.python.org)
-
-Optional:
-* [clang](https://clang.llvm.org)
-* [CLion](https://www.jetbrains.com/clion)
-* [Cygwin](https://cygwin.com)
-* [MSYS2](https://www.msys2.org)
-* [MinGW](https://mingw-w64.org/doku.php)
-* [Visual Studio](https://www.visualstudio.com)
 
 # How to build?
 
