@@ -42,9 +42,9 @@ C++ Trader is a set of components for building high performance Trading Platform
 * [gil](https://github.com/chronoxor/gil.git)
 * [python3](https://www.python.org)
 
-# How to build?
+# Building
 
-### Linux: install required packages
+### Linux (ubuntu): install required packages
 ```shell
 sudo apt-get install -y binutils-dev uuid-dev
 ```
@@ -61,25 +61,13 @@ cd CppTrader
 gil update
 ```
 
-### Linux
+### unix-like os's
 ```shell
 cd build
 ./unix.sh
 ```
 
-### MacOS
-```shell
-cd build
-./unix.sh
-```
-
-### Windows (Cygwin)
-```shell
-cd build
-unix.bat
-```
-
-### Windows (MSYS2)
+### Windows (Cygwin or MSYS2)
 ```shell
 cd build
 unix.bat
@@ -99,19 +87,18 @@ vs.bat
 
 # Performance
 
-Here comes several micro-benchmarks for trading components.
+Here are several micro-benchmarks for trading system components
 
 Benchmark environment is the following:
 ```
-CPU architecutre: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-CPU logical cores: 8
-CPU physical cores: 4
-CPU clock speed: 3.998 GHz
+CPU architecutre: Intel(R) Core(TM) i9-11900K CPU @ 3.50GHz
+CPU logical cores: 16
+CPU physical cores: 8
+MaxCPU clock speed: 5.300 GHz
 CPU Hyper-Threading: enabled
-RAM total: 31.962 GiB
-RAM free: 21.623 GiB
+RAM total: 31.915 GiB
 
-OS version: Microsoft Windows 8 Enterprise Edition (build 9200), 64-bit
+OS version: ubuntu 22.04 LTS (kernel version 5.15 lowlatency)
 OS bits: 64-bit
 Process bits: 64-bit
 Process configuaraion: release
@@ -119,12 +106,12 @@ Process configuaraion: release
 
 ## NASDAQ ITCH handler
 
-Benchmark measures the performance of the [NASDAQ ITCH handler](https://github.com/chronoxor/CppTrader/blob/master/include/trader/providers/nasdaq/itch_handler.h).
+Benchmark measures the performance of the [NASDAQ ITCH handler](https://github.com/rcallan/CppTrader/blob/master/include/trader/providers/nasdaq/itch_handler.h).
 It shows how fast it can parse and handle ITCH messages from the input stream.
 
 Sample ITCH file could be downloaded from ftp://emi.nasdaq.com/ITCH
 
-* [cpptrader-performance-itch_handler](https://github.com/chronoxor/CppTrader/blob/master/performance/itch_handler.cpp) < 01302017.NASDAQ_ITCH50
+* [cpptrader-performance-itch_handler](https://github.com/rcallan/CppTrader/blob/master/performance/itch_handler.cpp) < 01302017.NASDAQ_ITCH50
 ```
 ITCH processing...Done!
 
@@ -138,13 +125,13 @@ ITCH message throughput: 41460256 msg/s
 
 ## Market manager
 
-Benchmark measures the performance of the [Market manager](https://github.com/chronoxor/CppTrader/blob/master/include/trader/matching/market_manager.h ).
+Benchmark measures the performance of the [Market manager](https://github.com/rcallan/CppTrader/blob/master/include/trader/matching/market_manager.h ).
 It shows how fast it can handle orders operations (add, reduce, modify, delete,
 execute) and build an order book.
 
 Sample ITCH file could be downloaded from ftp://emi.nasdaq.com/ITCH
 
-* [cpptrader-performance-market_manager](https://github.com/chronoxor/CppTrader/blob/master/performance/market_manager.cpp) < 01302017.NASDAQ_ITCH50
+* [cpptrader-performance-market_manager](https://github.com/rcallan/CppTrader/blob/master/performance/market_manager.cpp) < 01302017.NASDAQ_ITCH50
 ```
 ITCH processing...Done!
 
@@ -190,7 +177,7 @@ pre-allocated array with O(1) for create and delete each price level.
 
 Sample ITCH file could be downloaded from ftp://emi.nasdaq.com/ITCH
 
-* [cpptrader-performance-market_manager_optimized](https://github.com/chronoxor/CppTrader/blob/master/performance/market_manager_optimized.cpp) < 01302017.NASDAQ_ITCH50
+* [cpptrader-performance-market_manager_optimized](https://github.com/rcallan/CppTrader/blob/master/performance/market_manager_optimized.cpp) < 01302017.NASDAQ_ITCH50
 ```
 ITCH processing...Done!
 
@@ -233,7 +220,7 @@ manager.
 
 Sample ITCH file could be downloaded from ftp://emi.nasdaq.com/ITCH
 
-* [cpptrader-performance-market_manager_optimized_aggressive](https://github.com/chronoxor/CppTrader/blob/master/performance/market_manager_optimized_aggressive.cpp) < 01302017.NASDAQ_ITCH50
+* [cpptrader-performance-market_manager_optimized_aggressive](https://github.com/rcallan/CppTrader/blob/master/performance/market_manager_optimized_aggressive.cpp) < 01302017.NASDAQ_ITCH50
 ```
 ITCH processing...Done!
 
